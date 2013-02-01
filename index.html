@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/cupertino/jquery-ui.css">-->
+        <link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.0.custom.min.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>Let's Panic the Cat!</p>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+
+        <!-- TODO Is this the best way to add JQuery UI? How do I support offline dev (e.g. on ferry)? -->
+        <!--<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>-->
+        <script src="js/vendor/jquery-ui-1.10.0.custom.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <div class="dress">
+            <div class="body"></div>
+            <div class="skirt"></div>
+            <div class="sleeves"></div>
+            <div class="accessory"></div>
+        </div>
+        <div class="selection">
+            <div class="choice">
+
+            </div>
+            <form id="selection_form">
+                <fieldset name="body_choice" form="selection_form">
+                    <legend>Choose body type:</legend>
+                    <input type="radio" name="body" id="bateau" value='bateau'>
+                    <label for="bateau">bateau</label>
+                    <input type="radio" name="body" id="v-neck" value='v-neck'>
+                    <label for="v-neck">v-neck</label>
+                    <!--<input type="radio" name="body" id="doloman" value='doloman'>-->
+                    <!--<label for="doloman">doloman</label>-->
+                    <input type="radio" name="body" id="colour" value='colour'>
+                    <label for="colour">colour</label>
+                </fieldset>
+                <br>
+                <fieldset name="skirt_choice" form="selection_form">
+                    <legend>Choose skirt type:</legend>
+                    <input type="radio" name="skirt" id="pencil" value='pencil'>
+                    <label for="pencil">pencil</label>
+                    <input type="radio" name="skirt" id="floaty" value='floaty'>
+                    <label for="floaty">floaty</label>
+                </fieldset>
+                <br>
+                <fieldset name="sleeves_choice" form="selection_form">
+                <legend>Choose sleeves type:</legend>
+                    <input type="radio" name="sleeves" id="no_sleeves" value='no_sleeves'>
+                    <label for="no_sleeves">none</label>
+                    <input type="radio" name="sleeves" id="cap" value='cap'>
+                    <label for="cap">cap</label>
+                    <input type="radio" name="sleeves" id="long" value='long'>
+                    <label for="long">long</label>
+                </fieldset>
+                <br>
+                <fieldset name="accessory_choice" form="selection_form">
+                    <legend>Choose accessories:</legend>
+                    <input type="checkbox" name="accessory" id="black_belt" value='black_belt'>
+                    <label for="black_belt">Black belt</label>
+                </fieldset>
+                <br>
+                <fieldset name="trim_choice" form="selection_form">
+                    <legend>Choose trims:</legend>
+                    <input type="checkbox" name="trim" id="neck_trim" value='neck_trim'>
+                    <label for="neck_trim">Neck</label>
+                    <input type="checkbox" name="trim" id="hem_trim" value='hem_trim'>
+                    <label for="hem_trim">Hem</label>
+                    <input type="checkbox" name="trim" id="sleeve_trim" value='sleeve_trim'>
+                    <label for="sleeve_trim">Sleeves</label>
+                </fieldset>
+                <br>
+                <!--<fieldset name="effect_choice" form="selection_form">-->
+                    <!--<legend>Choose effect:</legend>-->
+                    <!--<input type="radio" name="effect" id="blind" value='blind'>-->
+                    <!--<label for="blind">blind</label>-->
+
+                    <!--<input type="radio" name="effect" id="bounce" value='bounce'>-->
+                    <!--<label for="bounce">bounce</label>-->
+
+                    <!--<input type="radio" name="effect" id="shake" value='shake'>-->
+                    <!--<label for="shake">shake</label>-->
+
+                    <!--<input type="radio" name="effect" id="clip" value='clip'>-->
+                    <!--<label for="clip">clip</label>-->
+
+                    <!--<input type="radio" name="effect" id="drop" value='drop'>-->
+                    <!--<label for="drop">drop</label>-->
+
+                    <!--<input type="radio" name="effect" id="fold" value='fold'>-->
+                    <!--<label for="fold">fold</label>-->
+
+                    <!--<input type="radio" name="effect" id="highlight" value='highlight'>-->
+                    <!--<label for="highlight">highlight</label>-->
+
+                    <!--<input type="radio" name="effect" id="puff" value='puff'>-->
+                    <!--<label for="puff">puff</label>-->
+
+                    <!--<input type="radio" name="effect" id="pulsate" value='pulsate'>-->
+                    <!--<label for="pulsate">pulsate</label>-->
+
+                    <!--<input type="radio" name="effect" id="scale" value='scale'>-->
+                    <!--<label for="scale">scale</label>-->
+
+                    <!--<input type="radio" name="effect" id="size" value='size'>-->
+                    <!--<label for="size">size</label>-->
+
+                    <!--<input type="radio" name="effect" id="slide" value='slide'>-->
+                    <!--<label for="slide">slide</label>-->
+                <!--</fieldset>-->
+            </form>
+            <br>
+            <div class="list"></div>
+        </div>
+
+        <!-- TODO reset -->
+        <!-- TODO undo -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
